@@ -1,0 +1,14 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "counter"
+main = "src/index.ts"
+compatibility_date = "2024-07-25"
+
+[[durable_objects.bindings]]
+name = "COUNTER"
+class_name = "Counter"
+
+# Durable Object migrations.
+# Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#migrations
+# [[migrations]]
+# tag = "v1"
+# new_classes = ["Counter"]
