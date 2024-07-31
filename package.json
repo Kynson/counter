@@ -1,21 +1,21 @@
 {
-	"name": "counter",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"cf-typegen": "wrangler types"
-	},
-	"type": "module",
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20240725.0",
-		"@eslint/js": "^9.8.0",
-		"@types/eslint": "^9.6.0",
-		"@types/eslint__js": "^8.42.3",
-		"eslint": "^9.7.0",
-		"eslint-config-prettier": "^9.1.0",
-		"typescript": "^5.5.2",
-		"typescript-eslint": "^8.0.0-alpha.44"
-	}
+  "name": "counter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "doppler run --mount .dev.vars --mount-format template --mount-template .dev.vars.tmpl -- wrangler dev",
+    "cf-typegen": "doppler run --mount .dev.vars --mount-format template --mount-template .dev.vars.tmpl -- wrangler types"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240725.0",
+    "@eslint/js": "^9.8.0",
+    "@types/eslint": "^9.6.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^8.0.0-alpha.44"
+  }
 }
