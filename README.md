@@ -26,3 +26,5 @@ If a counter is no longer needed, send a `DELETE` request to the corresponding p
 ## How it works
 This API is powered by [Cloudflare Workers](https://developers.cloudflare.com/workers/) and [Durable Objects](https://developers.cloudflare.com/durable-objects/). A globally unique counter object will be created when a `GET` request hits a path for the first time and initialize the counter. Any subsequence `GET` request will increment the counter for that path. Durbale Objects ensures there is only one running instance for each counter, each increment can be considered atomic.
 
+## Acknowledgement
+This project is based on Cloudflare's [Atomic Counter](https://developers.cloudflare.com/durable-objects/examples/build-a-counter/) example.

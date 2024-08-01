@@ -1,20 +1,20 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
-		"lib": ["ESNext"],
-		/* Modules */
-		"module": "ESNext",
-		"moduleResolution": "node",
-		"types": ["@cloudflare/workers-types/2023-07-01"],
-		"noEmit": true,
-		/* Interop Constraints */
-		"isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
-		"allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
-		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": ["@cloudflare/workers-types"],
+    "noEmit": true,
+    /* Interop Constraints */
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+    "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
 
-		/* Type Checking */
-		"strict": true /* Enable all strict type-checking options. */,
-		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
-		"strictNullChecks": true
-	}
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "strictNullChecks": true
+  }
 }
